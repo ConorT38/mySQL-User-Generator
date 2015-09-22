@@ -2,7 +2,7 @@ import random
 import MySQLdb as mdb
 
 #connect to the database
-con = mdb.connect("localhost", "conor","blizzardofozz1","database1")
+con = mdb.connect("localhost", "username","password","database_name")
 cur = con.cursor()
 
 fname = ["Michelle","Phyllis","Sally","Stacey","Macey","Marilyn","Claudette","Claudia","Alannah","Anne","Emma","Emily","Orla","Aoife","Katie","Catherine","Yvonne","Simone","June","Carmel","Maureen","Helen","Lisa","Kym","Mary-Kate","Maggie","Miranda","Kelly","Leiha","Jane","Sarah","Michael","Jackson","Bobby","Billy","Shane","Sean","Graham","David","Niall","Seamus","Cathal","Callum","Karl","Carl","Josh","Joe","Joey","Richard","Dick","George","Alan","Abraham","Bryan","Bob","Barry","Will","Liam","Ben","James","Eric","Abdul"]
