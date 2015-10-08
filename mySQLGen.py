@@ -43,9 +43,10 @@ while a < 10000:
         to = str(town[t])
         co = str(county[c])
         es = str(estate[e])
-                           
-        #.execute() is essentially to query
-        cur.execute('INSERT INTO user(fname, lname, age, address, number) VALUES("'+first+'","'+last+'","'+age+'","'+dig+' '+es+' '+to+' Co.'+co+'","'+number+'")')
+        
+        with con:
+            #.execute() is essentially to query
+            cur.execute('INSERT INTO user(fname, lname, age, address, number) VALUES("'+first+'","'+last+'","'+age+'","'+dig+' '+es+' '+to+' Co.'+co+'","'+number+'")')
     
         a = a+1
         fil= "No.{0} account has been made."
